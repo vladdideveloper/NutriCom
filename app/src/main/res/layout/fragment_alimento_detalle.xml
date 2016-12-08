@@ -1,0 +1,168 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:stretchColumns="1">
+
+    <TableRow android:background="?colorPrimary">
+
+        <TextView
+            android:layout_column="0"
+            android:padding="6dip"
+            android:id="@+id/tv_peso"
+            android:textColor="@android:color/white" />
+
+    </TableRow>
+
+    <TableRow android:background="?colorPrimaryDark">
+
+        <TextView
+            android:layout_column="0"
+            android:padding="3dip"
+            android:text="COMPOSICIÓN"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_column="2"
+            android:padding="3dip"
+            android:text="VALOR"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_column="3"
+            android:padding="3dip"
+            android:text="UND.MEDIDA"
+            android:textColor="@android:color/white" />
+    </TableRow>
+
+    <TableRow>
+    <TextView
+        android:layout_column="0"
+        android:padding="3dip"
+        android:text="ENERGÍA"
+        android:textColor="?colorPrimaryDark"/>
+
+    <TextView
+        android:layout_column="2"
+        android:id="@+id/tv_energy"
+        android:gravity="left"
+        android:padding="3dip"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:text="300 20 1111" />
+
+    <TextView
+        android:layout_column="3"
+        android:padding="3dip"
+        android:text="Kcal"
+        android:textColor="?colorPrimaryDark" />
+    </TableRow>
+
+    <TableRow>
+    <TextView
+        android:layout_column="0"
+        android:padding="3dip"
+        android:text="PROTEÍNAS"
+        android:textColor="?colorPrimaryDark" />
+
+    <TextView
+        android:layout_column="2"
+        android:gravity="left"
+        android:padding="3dip"
+        android:id="@+id/tv_proteinas"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <TextView
+            android:layout_column="3"
+            android:padding="3dip"
+            android:text="gr"
+            android:textColor="?colorPrimaryDark" />
+    </TableRow>
+
+    <TableRow>
+    <TextView
+        android:layout_column="0"
+        android:text="LÍPIDOS"
+        android:padding="3dip"
+        android:textColor="?colorPrimaryDark" />
+
+    <TextView
+        android:gravity="left"
+        android:padding="3dip"
+        android:layout_column="2"
+        android:id="@+id/tv_lipidos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:text="@string/large_text" />
+
+        <TextView
+            android:layout_column="3"
+            android:padding="3dip"
+            android:text="gr"
+            android:textColor="?colorPrimaryDark" />
+    </TableRow>
+
+    <TableRow>
+    <TextView
+        android:layout_column="0"
+        android:text="CARBOHIDRATOS"
+        android:padding="3dip"
+        android:textColor="?colorPrimaryDark" />
+
+    <TextView
+        android:gravity="left"
+        android:padding="3dip"
+        android:layout_column="2"
+        android:id="@+id/tv_carb"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:text="Abogado penalista" />
+
+        <TextView
+            android:layout_column="3"
+            android:padding="3dip"
+            android:text="gr"
+            android:textColor="?colorPrimaryDark" />
+    </TableRow>
+
+    <TableRow>
+    <TextView
+        android:layout_column="0"
+        android:padding="3dip"
+        android:text="FIBRA CRUDA"
+        android:textColor="?colorPrimaryDark" />
+
+    <TextView
+        android:gravity="left"
+        android:padding="3dip"
+        android:layout_column="2"
+        android:id="@+id/tv_fibCrud"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:layout_column="3"
+            android:padding="3dip"
+            android:text="gr"
+            android:textColor="?colorPrimaryDark" />
+    </TableRow>
+
+    <TableRow>
+    <TextView
+        android:layout_column="0"
+        android:padding="3dip"
+        android:text="FIBRA DIETÉTICA"
+        android:textColor="?colorPrimaryDark" />
+
+    <TextView
+        android:gravity="left"
+        android:padding="3dip"
+        android:layout_column="2"
+        android:id="@+id/tv_fibDiet"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:text="Abogado penalista" />
+
+        <TextView
+            android:layout_column="3"
+            android:padding="3dip"
+            android:text="gr"
+            android:textColor="?colorPrimaryDark" />
+    </TableRow>
+
+</TableLayout>
