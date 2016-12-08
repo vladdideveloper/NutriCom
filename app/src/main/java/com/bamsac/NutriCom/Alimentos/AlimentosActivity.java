@@ -25,8 +25,54 @@ public class AlimentosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_alimentos);
         mIdTipo = getIntent().getStringExtra(AlimentoClasificacion.EXTRA_TIPO_ALIMENTO_ID);
         setToolbar();
+        switch (mIdTipo){
+            case  "1":
+                setTitle("Almidón");
+                break;
+            case  "2":
+                setTitle("Frutas");
+                break;
+            case  "3":
+                setTitle("Verduras");
+                break;
+            case  "4":
+                setTitle("Lacteos enteros");
+                break;
+            case  "5":
+                setTitle("Lacteos semidescremados");
+                break;
+            case  "6":
+                setTitle("Lacteos desnatados");
+                break;
+            case  "7":
+                setTitle("Carnes magras");
+                break;
+            case  "8":
+                setTitle("Carnes semi magras");
+                break;
+            case  "9":
+                setTitle("Carnes grasas");
+                break;
+            case  "10":
+                setTitle("Proteínas de origen vegetal");
+                break;
+            case  "11":
+                setTitle("Dulces");
+                break;
+            case  "12":
+                setTitle("Grasas");
+                break;
+            default:
+                setTitle("Fracaso");
+                break;
+        }
 
+        /*if (mIdTipo == "4"){
             setTitle("Arroz");
+        }else {
+            setTitle("Otro");
+        }*/
+
 
 
         AlimentosFragment fragment = (AlimentosFragment)
