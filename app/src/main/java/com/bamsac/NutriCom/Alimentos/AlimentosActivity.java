@@ -25,6 +25,10 @@ public class AlimentosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_alimentos);
         mIdTipo = getIntent().getStringExtra(AlimentoClasificacion.EXTRA_TIPO_ALIMENTO_ID);
         setToolbar();
+
+            setTitle("Arroz");
+
+
         AlimentosFragment fragment = (AlimentosFragment)
                 getSupportFragmentManager().findFragmentById(R.id.alimentos_cner);
 
