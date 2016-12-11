@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.bamsac.nutri.AlimentoClasificacion.AlimentoClasificacion"
-    tools:showIn="@layout/activity_alimento_clasificacion">
+    tools:context="com.bamsac.NutriCom.AlimentoClasificacion.AlimentoClasificacion"
+    tools:showIn="@layout/app_bar_main">
 
 </RelativeLayout>

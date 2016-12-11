@@ -1,4 +1,4 @@
-package mvdesarrollo.nutricombeta01;
+package com.bamsac.NutriCom;
 
 import org.junit.Test;
 

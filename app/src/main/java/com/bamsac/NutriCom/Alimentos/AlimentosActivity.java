@@ -6,14 +6,14 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import com.bamsac.NutriCom.AlimentoClasificacion.AlimentoClasificacion;
+import com.bamsac.NutriCom.AlimentoClasificacion.AlimentoClasificacionFragment;
 import com.bamsac.NutriCom.R;
 
 /**
  * Created by Vladdi on 08/12/2016.
  */
 
-public class AlimentosActivity extends AppCompatActivity {
+public class AlimentosActivity extends AppCompatActivity  {
     private DrawerLayout drawerLayout;
 
     public static final String EXTRA_ALIMENTO_ID = "extra_alimento_id";
@@ -23,8 +23,10 @@ public class AlimentosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alimentos);
-        mIdTipo = getIntent().getStringExtra(AlimentoClasificacion.EXTRA_TIPO_ALIMENTO_ID);
-        setToolbar();
+        mIdTipo = getIntent().getStringExtra(AlimentoClasificacionFragment.EXTRA_TIPO_ALIMENTO_ID);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        final ActionBar ab = getSupportActionBar();
         switch (mIdTipo){
             case  "1":
                 setTitle("Almidón");
@@ -67,13 +69,6 @@ public class AlimentosActivity extends AppCompatActivity {
                 break;
         }
 
-        /*if (mIdTipo == "4"){
-            setTitle("Arroz");
-        }else {
-            setTitle("Otro");
-        }*/
-
-
 
         AlimentosFragment fragment = (AlimentosFragment)
                 getSupportFragmentManager().findFragmentById(R.id.alimentos_cner);
@@ -93,5 +88,7 @@ public class AlimentosActivity extends AppCompatActivity {
         final ActionBar ab = getSupportActionBar();
 
     }
+
+
 }
 
